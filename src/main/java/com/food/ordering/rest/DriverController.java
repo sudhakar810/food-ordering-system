@@ -49,4 +49,20 @@ public class DriverController {
         return  new ResponseEntity<>(orderinfo,HttpStatus.OK);
     }
     
+    @PutMapping("/updateOrderInfo/{orderId}/{pickedUp}")
+    public ResponseEntity<String> itemPickedUp(@PathVariable("orderId") Integer orderId,@PathVariable("pickedUp") boolean pickedUp) {
+    	String result = driverService.itemPickedUp(orderId,pickedUp);
+        log.info("Fetch all: " + result);
+        return  new ResponseEntity<>(result,HttpStatus.OK);
+    }
+    
+    
+    @PutMapping("/updateDeliveryStatus/{orderId}/{deliverd}")
+    public ResponseEntity<String> itemDelivered(@PathVariable("orderId") Integer orderId,@PathVariable("deliverd") boolean deliverd) {
+    	String result = driverService.itemDelivered(orderId,deliverd);
+        log.info("Fetch all: " + result);
+        return  new ResponseEntity<>(result,HttpStatus.OK);
+    }
+    
+    
 }

@@ -102,5 +102,51 @@ public class DriverDao {
 
 	}
 
+	
+	public String itemPickedUp(Integer orderId,boolean pickedUp) {
 
+		String result  = "Failed";
+		try {
+			//String query = "SELECT item_name,item_id,price,resid,preptime FROM food.fooditem WHERE resid = ? ";
+			int count = jdbcTemplate.update(ApplicationConstants.UPDATE_ORDER_STATUS_SQL, pickedUp,orderId);
+			
+			if(count>0) {
+				result = "Order Picked Up!";
+			}
+			
+			log.info(count+" :"  +result);
+		} catch (Exception e) {
+			// TODO: handle exception
+
+			System.out.println(e.getLocalizedMessage());
+		}
+
+		return result;
+
+	}
+	
+	
+	public String itemDelivered(Integer orderId,boolean delivered) {
+
+		String result  = "Failed";
+		try {
+			//String query = "SELECT item_name,item_id,price,resid,preptime FROM food.fooditem WHERE resid = ? ";
+			int count = jdbcTemplate.update(ApplicationConstants.UPDATE_ORDER_DELIVERY_STATUS_SQL, delivered,orderId);
+			
+			if(count>0) {
+				result = "Order Delivered Successfully!";
+			}
+			
+			log.info(count+" :"  +result);
+		} catch (Exception e) {
+			// TODO: handle exception
+
+			System.out.println(e.getLocalizedMessage());
+		}
+
+		return result;
+
+	}
+
+	
 }

@@ -52,6 +52,32 @@ public class DriverServiceImpl implements DriverService {
 			return orderInfo;
 	}
 
+	@Override
+	public String itemPickedUp(Integer orderId, Boolean pickedUp) {
+		String result = null;
+		try {
+			result = driverDao.itemPickedUp(orderId,pickedUp);
+		} catch (Exception e) {
+			log.error(e.getMessage());
+		}
+		return result;
+		
+	}
+	
+	
+	@Override
+	public String itemDelivered(Integer orderId, Boolean delivered) {
+		String result = null;
+		try {
+			result = driverDao.itemDelivered(orderId,delivered);
+		} catch (Exception e) {
+			log.error(e.getMessage());
+		}
+		return result;
+		
+	}
+
+
 
 
 }

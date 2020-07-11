@@ -21,6 +21,10 @@ public class ApplicationConstants {
 			" FROM food.order,food.customer,food.fooditem" + 
 			" where customer.cust_id = food.order.cust_id" + 
 			" and food.order.delivered = false and food.order.item_id = fooditem.item_id and food.order.resid=?" +
-			" and food.order.delivered =false and distance = (select min(distance) from food.order)";
+			" and food.order.delivered =false and pickedUp = false";
 			
+	public static String UPDATE_ORDER_STATUS_SQL = "update food.order set pickedup = ? where orderid=?";
+	
+	public static String UPDATE_ORDER_DELIVERY_STATUS_SQL = "update food.order set delivered = ? where orderid=?";
+
 }
