@@ -7,7 +7,7 @@
 	</configSuffixes>
 	<enableImports><![CDATA[false]]></enableImports>
 	<configs>
-		<config>java:com.food.app.FoodOrderingApp</config>
+		<config>java:com.food.ordering.FoodOrderingApp</config>
 	</configs>
 	<autoconfigs>
 	</autoconfigs>
