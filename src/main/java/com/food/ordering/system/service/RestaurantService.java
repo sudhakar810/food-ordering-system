@@ -13,6 +13,6 @@ public interface RestaurantService {
 	    
 	    void save(List<Restaurant> restaurantList);
 	    
-	    String validateRestaurant(Validate validate);
+	    boolean validateRestaurant(Validate validate);
 
 }

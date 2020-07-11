@@ -17,6 +17,7 @@ public class Order {
 	private Double price;
 	private Double total_fare;
 	private float distance;
+	private boolean delivered;
 	
 	public Integer getOrdeId() {
 		return ordeId;
@@ -84,11 +85,19 @@ public class Order {
 	public void setPreptime(Integer preptime) {
 		this.preptime = preptime;
 	}
+	
+	
+	public boolean isDelivered() {
+		return delivered;
+	}
+	public void setDelivered(boolean delivered) {
+		this.delivered = delivered;
+	}
 	@Override
 	public String toString() {
 		return "Order [ordeId=" + ordeId + ", item_id=" + item_id + ", resid=" + resid + ", cust_id=" + cust_id
 				+ ", orderTime=" + orderTime + ", quantity=" + quantity + ", preptime=" + preptime + ", price=" + price
-				+ ", total_fare=" + total_fare + ", distance=" + distance + "]";
+				+ ", total_fare=" + total_fare + ", distance=" + distance + ", delivered=" + delivered + "]";
 	}
 	
 	

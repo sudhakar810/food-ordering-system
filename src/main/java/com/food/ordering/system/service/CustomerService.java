@@ -18,7 +18,7 @@ public interface CustomerService {
 	   
 	   List<MenuItem> findMenuItems(String resId);
 	    
-	    String validateCustomer(Validate validate);
+	    boolean validateCustomer(Validate validate);
 	    
 	    Invoice OrderFood(List<Order> orderList);
 	    

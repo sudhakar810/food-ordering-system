@@ -35,9 +35,9 @@ public class RestaurantServiceImpl implements RestaurantService {
 	}
 
 	@Override
-	public String validateRestaurant(Validate validate) {
+	public boolean validateRestaurant(Validate validate) {
 		
-		String result = null;
+		Boolean result = false;
 		
 		try {
 			result = restaurantRepositoryDao.validateRestaurant(validate);

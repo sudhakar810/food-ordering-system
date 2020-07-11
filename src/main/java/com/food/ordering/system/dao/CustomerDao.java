@@ -35,23 +35,23 @@ public class CustomerDao {
 	@Autowired
 	JdbcTemplate jdbcTemplate;
 
-	private static DecimalFormat df2 = new DecimalFormat("#.##");
+	public boolean validateRestaurant(Validate validate) {
 
-	public String validateRestaurant(Validate validate) {
-
-		String resName = null;
+		boolean exist = false;
 		try {
 			//String query = "SELECT name FROM food.login WHERE id = ? and password = ?";
-			resName = jdbcTemplate.queryForObject(ApplicationConstants.VALIDATE_LOGIN_SQL, new Object[] { validate.getId(), validate.getPassword() },
+			String count = jdbcTemplate.queryForObject(ApplicationConstants.VALIDATE_LOGIN_SQL, new Object[] { validate.getId(), validate.getPassword() },
 					String.class);
 
-			System.out.println(resName);
+			if(Integer.parseInt(count)>0) {
+				exist = true;
+			}
 		} catch (Exception e) {
 			// TODO: handle exception
 			log.error(e.getLocalizedMessage());
 		}
 
-		return resName;
+		return exist;
 
 	}
 
@@ -112,6 +112,8 @@ public class CustomerDao {
 									+ (orderList.get(i).getPrice() * orderList.get(i).getQuantity())
 									+ ((orderList.get(i).getPrice() * orderList.get(i).getQuantity()) * (5 / 100.0f))));
 					ps.setString(7, orderList.get(i).getCust_id());
+					ps.setBoolean(8, orderList.get(i).isDelivered());
+					ps.setDouble(9, orderList.get(i).getDistance());
 				}
 
 				public int getBatchSize() {

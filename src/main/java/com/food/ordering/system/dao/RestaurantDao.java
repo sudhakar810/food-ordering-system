@@ -13,21 +13,23 @@ public class RestaurantDao {
 	  JdbcTemplate jdbcTemplate;
 	  
 	  
-	  public String validateRestaurant(Validate validate) {
+	  public boolean validateRestaurant(Validate validate) {
 		  
-		String resName = null;
+		boolean exist = false;
 		try {
-			String query = "SELECT name FROM food.login WHERE id = ? and password = ?";
-			resName = jdbcTemplate.queryForObject(query, new Object[] { validate.getId(), validate.getPassword() },
+			String query = "SELECT count(id) FROM food.login WHERE id = ? and password = ?";
+			String count = jdbcTemplate.queryForObject(query, new Object[] { validate.getId(), validate.getPassword() },
 					String.class);
-
-			System.out.println(resName);
+			if(Integer.parseInt(count)>0) {
+				exist = true;
+			}
+			System.out.println(exist);
 		} catch (Exception e) {
 			// TODO: handle exception
 			System.out.println(e.getLocalizedMessage());
 		}
 
-		return resName;
+		return exist;
 
 	}
 

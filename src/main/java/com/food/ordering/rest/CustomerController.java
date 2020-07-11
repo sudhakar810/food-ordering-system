@@ -37,8 +37,8 @@ public class CustomerController {
     
     @PostMapping("/login")
     @ResponseStatus(HttpStatus.CREATED)
-    public String customerLogin(@RequestBody Validate validate) {
-    	String result = cr.validateCustomer(validate);
+    public boolean customerLogin(@RequestBody Validate validate) {
+    	boolean result = cr.validateCustomer(validate);
         log.info("logged in customer: " + result);
         return result;
     }

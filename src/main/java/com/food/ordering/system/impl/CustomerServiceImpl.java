@@ -21,15 +21,15 @@ public class CustomerServiceImpl implements CustomerService {
 	Logger log = LoggerFactory.getLogger(CustomerServiceImpl.class);
  
 	@Autowired
-	CustomerDao customerRepositoryDao;
+	CustomerDao customerDao;
 		
 	@Override
-	public String validateCustomer(Validate validate) {
+	public boolean validateCustomer(Validate validate) {
 		
-		String result = null;
+		boolean result = false;
 		
 		try {
-			result = customerRepositoryDao.validateRestaurant(validate);
+			result = customerDao.validateRestaurant(validate);
 		} catch (Exception e) {
 			log.error(e.getMessage());
 		}
@@ -41,7 +41,7 @@ public class CustomerServiceImpl implements CustomerService {
 		
 		List<Restaurant> resList = null;
 		try {
-			resList = customerRepositoryDao.findAllRestaurant();
+			resList = customerDao.findAllRestaurant();
 			log.info(resList.toString());
 		} catch (Exception e) {
 			log.error(e.getMessage());
@@ -56,7 +56,7 @@ public class CustomerServiceImpl implements CustomerService {
 		 List<MenuItem> menuItems = null;
 		
 		try {
-			menuItems = customerRepositoryDao.findMenuItems(resId);
+			menuItems = customerDao.findMenuItems(resId);
 		} catch (Exception e) {
 			log.error(e.getMessage());
 		}
@@ -68,7 +68,7 @@ public class CustomerServiceImpl implements CustomerService {
 		
 		Invoice invoice = null;
 		try {
-			invoice = customerRepositoryDao.OrderFood(orderList);
+			invoice = customerDao.OrderFood(orderList);
 		} catch (Exception e) {
 			log.error(e.getMessage());
 		}

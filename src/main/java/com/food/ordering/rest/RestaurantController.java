@@ -32,8 +32,8 @@ public class RestaurantController {
     
     @PostMapping("/login")
     @ResponseStatus(HttpStatus.CREATED)
-    public String loginRestaurant(@RequestBody Validate validate) {
-    	String result = cr.validateRestaurant(validate);
+    public boolean loginRestaurant(@RequestBody Validate validate) {
+    	boolean result = cr.validateRestaurant(validate);
         log.info("logged in restaurant: " + result);
         //cr.save(restaurants);
         return result;
