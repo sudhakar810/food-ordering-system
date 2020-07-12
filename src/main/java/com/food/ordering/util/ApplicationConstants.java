@@ -27,4 +27,17 @@ public class ApplicationConstants {
 	
 	public static String UPDATE_ORDER_DELIVERY_STATUS_SQL = "update food.order set delivered = ? where orderid=?";
 
+	public static String GET_ALL_ORDERS_SQL = "SELECT orderid, item_name, customer.cust_name,customer.address , food.order.resid, quantity, total_fare, delivered" + 
+			" FROM food.order,food.customer,food.fooditem" + 
+			" where customer.cust_id = food.order.cust_id" + 
+			" and food.order.delivered = false and food.order.item_id = fooditem.item_id and food.order.resid=?" +
+			" and food.order.delivered =false and pickedUp = false";
+	
+	
+	public static String GET_ITEMS_BY_ORDER_ID_SQL = "SELECT item_name, food.order.resid, quantity, total_fare, delivered" + 
+			" FROM food.order,food.customer,food.fooditem" + 
+			" where customer.cust_id = food.order.cust_id" + 
+			" and food.order.delivered = false and food.order.item_id = fooditem.item_id and food.order.resid=?" +
+			" and food.order.orderid = ? and food.order.delivered =false and pickedUp = false";
+
 }

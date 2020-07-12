@@ -4,6 +4,7 @@
 	"description": "",
 	"order": [
 		"c4552f85-132e-d992-6c34-7c34223864c1",
+		"2945c804-7f8e-bca2-c10b-b424993f78ee",
 		"4eb72f76-a1e4-8905-f041-731f6895b6e9",
 		"73672e9f-d5d7-55e3-4a92-5f7b14b0ebff",
 		"4a4d85c3-8028-5d97-6dba-6e74a70b6eee",
@@ -47,6 +48,29 @@
 			"collectionId": "d8603d15-2f04-bcd0-ea9b-b4d2d60c9b12",
 			"responses": [],
 			"rawModeData": "[{\n\t\"item_id\":\"item002\",\n\t\"resid\":\"res1\",\n\t\"cust_id\":\"sudhakar810\",\n\t\"quantity\":\"1\",\n\t\"preptime\":\"10\",\n\t\"price\":\"150\",\n\t\"distance\":\"5\"\n\t\n},\n{\n\t\"item_id\":\"item001\",\n\t\"resid\":\"res1\",\n\t\"cust_id\":\"sudhakar810\",\n\t\"quantity\":\"2\",\n\t\"preptime\":\"15\",\n\t\"price\":\"100\",\n\t\"distance\":\"5\"\n\t\n},\n{\n\t\"item_id\":\"item004\",\n\t\"resid\":\"res1\",\n\t\"cust_id\":\"sudhakar810\",\n\t\"quantity\":\"1\",\n\t\"preptime\":\"10\",\n\t\"price\":\"215\",\n\t\"distance\":\"5\"\n\t\n},\n{\n\t\"item_id\":\"item008\",\n\t\"resid\":\"res1\",\n\t\"cust_id\":\"sudhakar810\",\n\t\"quantity\":\"5\",\n\t\"preptime\":\"2\",\n\t\"price\":\"12\",\n\t\"distance\":\"5\"\n\t\n}]\n\n"
+		},
+		{
+			"id": "2945c804-7f8e-bca2-c10b-b424993f78ee",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/restaurants/getOrders/res1",
+			"queryParams": [],
+			"pathVariables": {},
+			"pathVariableData": [],
+			"preRequestScript": null,
+			"method": "GET",
+			"collectionId": "d8603d15-2f04-bcd0-ea9b-b4d2d60c9b12",
+			"data": null,
+			"dataMode": "params",
+			"name": "http://localhost:8080/restaurants/getOrders/res1",
+			"description": "Get All Order",
+			"descriptionFormat": "html",
+			"time": 1594535765339,
+			"version": 2,
+			"responses": [],
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {}
 		},
 		{
 			"id": "4a4d85c3-8028-5d97-6dba-6e74a70b6eee",
