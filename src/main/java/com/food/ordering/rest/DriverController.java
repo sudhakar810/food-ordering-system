@@ -21,6 +21,7 @@ import com.food.ordering.system.service.DriverService;
 import com.food.ordering.system.service.Menu;
 import com.food.ordering.system.service.MenuService;
 import com.food.ordering.system.service.RestaurantService;
+import com.food.ordering.util.FoodOrderingUtil;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -35,11 +36,14 @@ public class DriverController {
     private DriverService driverService;
 
     @PostMapping("/login")
-    @ResponseStatus(HttpStatus.CREATED)
-    public boolean driverLogin(@RequestBody Validate validate) {
-    	boolean result = driverService.validateDriver(validate);
-        log.info("logged in driver: " + result);
-        return result;
+    public ResponseEntity<Validate> driverLogin(@RequestBody Validate validate) {
+    	
+    	//boolean result = cr.validateCustomer(validate);
+        String token = FoodOrderingUtil.getJWTToken(validate.getId());
+    	validate.setToken(token);
+    	validate.setPassword(null);
+        log.info("logged in restaurant: " + validate.toString());
+        return  new ResponseEntity<>(validate,HttpStatus.OK);
     }
     
     @RequestMapping("/getOrderInfo/{resId}")

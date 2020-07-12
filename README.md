@@ -8,17 +8,17 @@ This project is done using Spring Boot web application
 ## Prerequistes
 1. Install Eclipse/STS
 2. Start PostGreSqp
-Use foodordering backup file available in resource folder,import in postGres and run the database
+3. Use foodordering backup file available in resource folder,import in postGres and run the database
 
 ### PsotGres DataBase Connection
 In the folder src/main/resources/application.properties, config your database url, username and password correctly.
 ### Start the Application
 1. Import project as maven project
-2. When the dependencies specified in the file pom.xml are automatically downloaded, run the application.
-3. right click on FoodOrderingApp.java clas and run as Java Application
-3. use Postman collection json endpoints available in  in src/main/resources/Food-Ordering-System.postman_collection.json
-4. impport Food-Ordering-System.postman_collection.json file in Postman 
-5. test all available APIs endpoints
+2. When the dependencies specified in the file pom.xml are automatically downloaded , run the application.
+3. right click on FoodOrderingApp.java clas and run as Java Application 
+3. use Postman collection Json end-points available in  in src/main/resources/Food-Ordering-System.postman_collection.json
+4. import Food-Ordering-System.postman_collection.json file in Postman 
+5. test all available APIs end-points
 
 ## EndPoints
 ####Restaurant Service APIs
@@ -40,5 +40,5 @@ In the folder src/main/resources/application.properties, config your database ur
 
 
 ## Testing
-Unit tests are not written because of time constraint. But, POSTMAN is used to test all endpoints.
+Unit tests are not written because of time constraint. But, POSTMAN is used to test all end-points.
 

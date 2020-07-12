@@ -18,6 +18,7 @@ import com.food.ordering.system.bean.DeliveryInfo.OrderInfo;
 import com.food.ordering.system.service.Menu;
 import com.food.ordering.system.service.MenuService;
 import com.food.ordering.system.service.RestaurantService;
+import com.food.ordering.util.FoodOrderingUtil;
 import com.food.ordering.util.GeneratePdfReport;
 
 import java.io.ByteArrayInputStream;
@@ -36,12 +37,14 @@ public class RestaurantController {
 
     
     @PostMapping("/login")
-    @ResponseStatus(HttpStatus.CREATED)
-    public boolean loginRestaurant(@RequestBody Validate validate) {
-    	boolean result = restaurantService.validateRestaurant(validate);
-        log.info("logged in restaurant: " + result);
-        //cr.save(restaurants);
-        return result;
+    public ResponseEntity<Validate> loginRestaurant(@RequestBody Validate validate) {
+    	
+    	String token = FoodOrderingUtil.getJWTToken(validate.getId());
+    	
+    	validate.setToken(token);
+    	validate.setPassword(null);
+        log.info("logged in restaurant: " + validate.toString());
+        return  new ResponseEntity<>(validate,HttpStatus.OK);
     }
     
     

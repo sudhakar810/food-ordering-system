@@ -2,6 +2,7 @@ package com.food.ordering.rest;
 
 import lombok.extern.slf4j.Slf4j;
 
+import org.apache.el.util.Validation;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -18,6 +19,7 @@ import com.food.ordering.system.service.CustomerService;
 import com.food.ordering.system.service.Menu;
 import com.food.ordering.system.service.MenuService;
 import com.food.ordering.system.service.RestaurantService;
+import com.food.ordering.util.FoodOrderingUtil;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -30,17 +32,16 @@ public class CustomerController {
 	Logger log = LoggerFactory.getLogger(CustomerController.class);
     @Autowired
     private CustomerService cr;
-
-   // @Autowired
-    private MenuService mr;
-
     
     @PostMapping("/login")
-    @ResponseStatus(HttpStatus.CREATED)
-    public boolean customerLogin(@RequestBody Validate validate) {
-    	boolean result = cr.validateCustomer(validate);
-        log.info("logged in customer: " + result);
-        return result;
+    public ResponseEntity<Validate>  customerLogin(@RequestBody Validate validate) {
+    	
+    	//boolean result = cr.validateCustomer(validate);
+        String token = FoodOrderingUtil.getJWTToken(validate.getId());
+    	validate.setToken(token);
+    	validate.setPassword(null);
+        log.info("logged in restaurant: " + validate.toString());
+        return  new ResponseEntity<>(validate,HttpStatus.OK);
     }
     
     
