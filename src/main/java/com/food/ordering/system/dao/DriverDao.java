@@ -56,23 +56,26 @@ public class DriverDao {
 			//String query = "SELECT item_name,item_id,price,resid,preptime FROM food.fooditem WHERE resid = ? ";
 			orderDetails = jdbcTemplate.query(ApplicationConstants.FIND_ORDER_INFO_SQL, new Object[] { resId }, new DeliveryInfoMapper());
 			
-			
+			Integer orderId = orderDetails.get(0).getOrdeId();
 			if(!ObjectUtils.isEmpty(orderDetails)) {
 				
 				orderInfo.setCustomerName(orderDetails.get(0).getCust_name());
 				orderInfo.setOrderId(orderDetails.get(0).getOrdeId());
 				orderInfo.setAddress(orderDetails.get(0).getAddress());
-				Double total_fare = new Double("0.0");
-				for(DeliveryInfo di : orderDetails) {
-					
-					total_fare = total_fare + di.getTotal_fare();
-				}
-				orderInfo.setTotalFare(total_fare);
+				/*
+				 * Double total_fare = new Double("0.0"); for(DeliveryInfo di : orderDetails) {
+				 * if(di.getOrdeId()==orderId) total_fare = total_fare + di.getTotal_fare(); }
+				 */
+				//orderInfo.setTotalFare(total_fare);
 			}
 			
 			
-			List<ItemInfo> itemInfo = jdbcTemplate.query(ApplicationConstants.FIND_DETAIL_SQL, new Object[] { resId }, new ItemInfoMapper());
-			
+			List<ItemInfo> itemInfo = jdbcTemplate.query(ApplicationConstants.FIND_DETAIL_SQL, new Object[] { resId ,orderId}, new ItemInfoMapper());
+			Double total_fare = new Double("0.0");
+			for(ItemInfo item : itemInfo) {
+					total_fare = total_fare + item.getTotal_fare();
+			}
+			orderInfo.setTotalFare(total_fare);
 			orderInfo.setItemInfo(itemInfo);
 			
 			log.info(orderDetails.toString());
