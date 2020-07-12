@@ -23,24 +23,6 @@ public class RestaurantServiceImpl implements RestaurantService {
 	RestaurantDao restaurantDao;
 	
 	@Override
-	public List<Restaurant> findAll() {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public Restaurant findOne(Long id) {
-		// TODO Auto-generated method stub
-		return null;
-	}
-
-	@Override
-	public void save(List<Restaurant> restaurantList) {
-		// TODO Auto-generated method stub
-		
-	}
-
-	@Override
 	public boolean validateRestaurant(Validate validate) {
 		
 		Boolean result = false;

@@ -8,11 +8,6 @@ import com.food.ordering.system.bean.DeliveryInfo.OrderInfo;
 
 public interface RestaurantService {
 	
-	    List<Restaurant> findAll();
-	    
-	    Restaurant findOne(Long id);
-	    
-	    void save(List<Restaurant> restaurantList);
 	    
 	    boolean validateRestaurant(Validate validate);
 	    

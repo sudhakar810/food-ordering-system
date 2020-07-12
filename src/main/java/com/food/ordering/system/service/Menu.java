@@ -1,15 +1,10 @@
 package com.food.ordering.system.service;
 
-import com.fasterxml.jackson.annotation.*;
+import java.util.List;
+
+import com.fasterxml.jackson.annotation.JsonInclude;
 import com.food.ordering.system.bean.MenuItem;
 import com.food.ordering.system.bean.Restaurant;
-
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
-import javax.persistence.*;
-import java.util.List;
 
 @JsonInclude(JsonInclude.Include.NON_NULL)
 
