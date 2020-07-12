@@ -1,15 +1,11 @@
 package com.food.ordering.system.dao;
 
-import java.math.RoundingMode;
 import java.security.SecureRandom;
 import java.sql.PreparedStatement;
 import java.sql.SQLException;
-import java.text.DecimalFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
-import java.util.Locale;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,7 +18,6 @@ import com.food.ordering.system.bean.MenuItem;
 import com.food.ordering.system.bean.Order;
 import com.food.ordering.system.bean.Restaurant;
 import com.food.ordering.system.bean.Validate;
-import com.food.ordering.system.impl.CustomerServiceImpl;
 import com.food.ordering.system.mapper.MenuItemMapper;
 import com.food.ordering.system.mapper.RestaurantMapper;
 import com.food.ordering.util.ApplicationConstants;

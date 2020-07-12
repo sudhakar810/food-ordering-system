@@ -7,8 +7,6 @@ import org.springframework.jdbc.core.RowMapper;
 
 import com.food.ordering.system.bean.DeliveryInfo;
 import com.food.ordering.system.bean.DeliveryInfo.ItemInfo;
-import com.food.ordering.system.bean.MenuItem;
-import com.food.ordering.system.bean.Restaurant;
 
 public class ItemInfoMapper implements RowMapper<ItemInfo>{
 

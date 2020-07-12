@@ -6,8 +6,6 @@ import java.sql.SQLException;
 import org.springframework.jdbc.core.RowMapper;
 
 import com.food.ordering.system.bean.DeliveryInfo;
-import com.food.ordering.system.bean.MenuItem;
-import com.food.ordering.system.bean.Restaurant;
 
 public class DeliveryInfoMapper implements RowMapper<DeliveryInfo>{
 

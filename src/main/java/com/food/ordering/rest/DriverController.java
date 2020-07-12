@@ -26,11 +26,17 @@ public class DriverController {
     @PostMapping("/login")
     public ResponseEntity<Validate> driverLogin(@RequestBody Validate validate) {
     	
-    	//boolean result = cr.validateCustomer(validate);
-        String token = FoodOrderingUtil.getJWTToken(validate.getId());
+    	String token = null;
+    	
+    	Boolean isExist =  driverService.validateDriver(validate);
+    	
+    	if(isExist) {
+    		token = FoodOrderingUtil.getJWTToken(validate.getId());
+    	}
+    	
     	validate.setToken(token);
     	validate.setPassword(null);
-        log.info("logged in restaurant: " + validate.toString());
+        log.info("logged in Driver: " + validate.toString());
         return  new ResponseEntity<>(validate,HttpStatus.OK);
     }
     

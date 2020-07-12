@@ -1,22 +1,13 @@
 package com.food.ordering.system.impl;
 
-import java.util.List;
-
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
-import com.food.ordering.system.bean.DeliveryInfo;
-import com.food.ordering.system.bean.Invoice;
-import com.food.ordering.system.bean.MenuItem;
-import com.food.ordering.system.bean.Order;
-import com.food.ordering.system.bean.Restaurant;
 import com.food.ordering.system.bean.Validate;
 import com.food.ordering.system.bean.DeliveryInfo.OrderInfo;
-import com.food.ordering.system.dao.CustomerDao;
 import com.food.ordering.system.dao.DriverDao;
-import com.food.ordering.system.service.CustomerService;
 import com.food.ordering.system.service.DriverService;
 
 @Component

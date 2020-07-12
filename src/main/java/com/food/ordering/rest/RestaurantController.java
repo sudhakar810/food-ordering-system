@@ -1,6 +1,7 @@
 package com.food.ordering.rest;
 
-import lombok.extern.slf4j.Slf4j;
+import java.io.ByteArrayInputStream;
+import java.util.List;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -10,24 +11,20 @@ import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RestController;
 
-import com.food.ordering.system.bean.Restaurant;
-import com.food.ordering.system.bean.Validate;
 import com.food.ordering.system.bean.DeliveryInfo.OrderInfo;
-import com.food.ordering.system.service.Menu;
-import com.food.ordering.system.service.MenuService;
+import com.food.ordering.system.bean.Validate;
 import com.food.ordering.system.service.RestaurantService;
 import com.food.ordering.util.FoodOrderingUtil;
 import com.food.ordering.util.GeneratePdfReport;
 
-import io.jsonwebtoken.Claims;
-
-import java.io.ByteArrayInputStream;
-import java.util.LinkedList;
-import java.util.List;
-
-import javax.servlet.http.HttpServletRequest;
+import lombok.extern.slf4j.Slf4j;
 
 @Slf4j
 @RestController
@@ -43,7 +40,13 @@ public class RestaurantController {
     @PostMapping("/login")
     public ResponseEntity<Validate> loginRestaurant(@RequestBody Validate validate) {
     	
-    	String token = FoodOrderingUtil.getJWTToken(validate.getId());
+    	String token = null;
+    	
+    	Boolean isExist =  restaurantService.validateRestaurant(validate);
+    	
+    	if(isExist) {
+    		token = FoodOrderingUtil.getJWTToken(validate.getId());
+    	}
     	
     	validate.setToken(token);
     	validate.setPassword(null);
