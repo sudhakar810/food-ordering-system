@@ -60,9 +60,9 @@ public class DriverController {
     }
     
     
-    @PutMapping("/updateDeliveryStatus/{orderId}/{deliverd}")
-    public ResponseEntity<String> itemDelivered(@PathVariable("orderId") Integer orderId,@PathVariable("deliverd") boolean deliverd) {
-    	String result = driverService.itemDelivered(orderId,deliverd);
+    @PutMapping("/updateDeliveryStatus/{orderId}/{delivered}")
+    public ResponseEntity<String> itemDelivered(@PathVariable("orderId") Integer orderId,@PathVariable("delivered") boolean delivered) {
+    	String result = driverService.itemDelivered(orderId,delivered);
         log.info("Fetch all: " + result);
         return  new ResponseEntity<>(result,HttpStatus.OK);
     }
