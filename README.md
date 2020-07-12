@@ -23,20 +23,23 @@ In the folder src/main/resources/application.properties, config your database ur
 ## EndPoints
 ####Restaurant Service APIs
 1. POST- http://localhost:8080/restaurants/login 
-2. GET - http://localhost:8080/restaurants/getOrders/res1 
-3. GET - http://localhost:8080/restaurants/printInvoice/res1
+2. GET - http://localhost:8080/restaurants/logout
+3. GET - http://localhost:8080/restaurants/getOrders/res1 
+4. GET - http://localhost:8080/restaurants/printInvoice/res1
 
 ####Customer Service APIs
 1. POST - http://localhost:8080/customer/login
-2. GET - http://localhost:8080/customer/findRestaurant
-3. GET - http://localhost:8080/customer/getMenuItem/res1
-4. POST - http://localhost:8080/customer/foodOrder   
+2. GET - http://localhost:8080/customer/logout
+3. GET - http://localhost:8080/customer/findRestaurant
+4. GET - http://localhost:8080/customer/getMenuItem/res1
+5. POST - http://localhost:8080/customer/foodOrder   
 
 ####Driver Service APIs
 1. POST - http://localhost:8080/driver/login
-2. GET - http://localhost:8080/driver/getOrderInfo/res1  
-3. PUT - http://localhost:8080/driver/updateOrderInfo/1273700145/true
-4. PUT - http://localhost:8080/driver/updateDeliveryStatus/1273700145/true
+2. GET - http://localhost:8080/driver/logout
+3. GET - http://localhost:8080/driver/getOrderInfo/res1  
+4. PUT - http://localhost:8080/driver/updateOrderInfo/1273700145/true
+5. PUT - http://localhost:8080/driver/updateDeliveryStatus/1273700145/true
 
 
 ## Testing

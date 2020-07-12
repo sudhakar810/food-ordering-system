@@ -44,6 +44,16 @@ public class CustomerController {
         return  new ResponseEntity<>(validate,HttpStatus.OK);
     }
     
+    @RequestMapping("/logout")
+    public ResponseEntity<String> logout() {
+    	String result = null;
+    	String invalidateToken = FoodOrderingUtil.invalidateToken();
+    	if(invalidateToken.isEmpty()) {
+    		result = "successfully logout";
+    	}
+    	log.info("Fetch all: " + invalidateToken);
+        return  new ResponseEntity<>(result,HttpStatus.OK);
+    }
     
     @RequestMapping("/findRestaurant")
     public ResponseEntity<List<Restaurant>> getRestaurants() {

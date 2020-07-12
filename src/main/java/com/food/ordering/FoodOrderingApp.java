@@ -29,6 +29,7 @@ public class FoodOrderingApp {
 				.addFilterAfter(new JWTAuthorizationFilter(), UsernamePasswordAuthenticationFilter.class)
 				.authorizeRequests()
 				.antMatchers(HttpMethod.POST, "/*/login").permitAll()
+				.antMatchers(HttpMethod.GET, "/*/logout").permitAll()
 				.anyRequest().authenticated();
 		}
 	}

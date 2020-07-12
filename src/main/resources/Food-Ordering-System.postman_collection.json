@@ -4,13 +4,16 @@
 	"description": "",
 	"order": [
 		"c4552f85-132e-d992-6c34-7c34223864c1",
+		"f77a973f-fc0f-b399-74d6-da11afc7cedf",
 		"2945c804-7f8e-bca2-c10b-b424993f78ee",
 		"13e3033c-f508-c7ea-46bf-248d57975726",
 		"4eb72f76-a1e4-8905-f041-731f6895b6e9",
+		"c658d945-17a0-9b01-191e-c60946803b37",
 		"73672e9f-d5d7-55e3-4a92-5f7b14b0ebff",
 		"4a4d85c3-8028-5d97-6dba-6e74a70b6eee",
 		"1ae8cbc3-e2bf-0065-cc81-b1f38bef5349",
 		"81a7a4ab-309a-169e-e7a8-a52631e84881",
+		"86565f7b-26cc-ab6e-d12d-f585c1778e5d",
 		"a9328328-d1da-d5c6-1a61-9adfbbe03172",
 		"4aa0f0bc-3071-a37f-e77c-deed2a16005f",
 		"580e7353-2fb3-c375-9b75-782cabec1ed2"
@@ -23,11 +26,11 @@
 	"requests": [
 		{
 			"id": "13e3033c-f508-c7ea-46bf-248d57975726",
-			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDQzNDQsImV4cCI6MTU5NDU0NDk0NH0.EsybdW2srKPcsSs-fyFdsU6JzN5W5hTvb7zXNt2HAhJ6GovKZGHd4HtzBAvMPFpHB_Cn67EXB-TTG51oaFzvXg\n",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDUxNzIsImV4cCI6MTU5NDU0NTc3Mn0.Myv5Ma6u9amAOHOjT_TK-u-mTO0kMYkR1XFgc9yS7jDIDp73AdB6ispbWXds-rceQ0YSs0-WXZ8eAjH-Z7jN2w\n",
 			"headerData": [
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDQzNDQsImV4cCI6MTU5NDU0NDk0NH0.EsybdW2srKPcsSs-fyFdsU6JzN5W5hTvb7zXNt2HAhJ6GovKZGHd4HtzBAvMPFpHB_Cn67EXB-TTG51oaFzvXg",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDUxNzIsImV4cCI6MTU5NDU0NTc3Mn0.Myv5Ma6u9amAOHOjT_TK-u-mTO0kMYkR1XFgc9yS7jDIDp73AdB6ispbWXds-rceQ0YSs0-WXZ8eAjH-Z7jN2w",
 					"description": "",
 					"enabled": true
 				}
@@ -43,7 +46,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1594545014042,
+			"time": 1594549303858,
 			"name": "http://localhost:8080/restaurants/printInvoice/res1",
 			"description": "Print Invoice",
 			"collectionId": "d8603d15-2f04-bcd0-ea9b-b4d2d60c9b12",
@@ -51,7 +54,7 @@
 		},
 		{
 			"id": "1ae8cbc3-e2bf-0065-cc81-b1f38bef5349",
-			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoic3VkaGFrYXI4MTAiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNTk0NTQ0NzExLCJleHAiOjE1OTQ1NDUzMTF9.JeQyDDiZBVOFjeGJWe7dYbWM-jOXov43Cx61K7koUZN7Tlw4KYrbNBtGD3gUEz2GeC2kRbHfHd5FEXQxD70tYw\n",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDUxNzIsImV4cCI6MTU5NDU0NTc3Mn0.Myv5Ma6u9amAOHOjT_TK-u-mTO0kMYkR1XFgc9yS7jDIDp73AdB6ispbWXds-rceQ0YSs0-WXZ8eAjH-Z7jN2w\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -61,7 +64,7 @@
 				},
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoic3VkaGFrYXI4MTAiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNTk0NTQ0NzExLCJleHAiOjE1OTQ1NDUzMTF9.JeQyDDiZBVOFjeGJWe7dYbWM-jOXov43Cx61K7koUZN7Tlw4KYrbNBtGD3gUEz2GeC2kRbHfHd5FEXQxD70tYw",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDUxNzIsImV4cCI6MTU5NDU0NTc3Mn0.Myv5Ma6u9amAOHOjT_TK-u-mTO0kMYkR1XFgc9yS7jDIDp73AdB6ispbWXds-rceQ0YSs0-WXZ8eAjH-Z7jN2w",
 					"description": "",
 					"enabled": true
 				}
@@ -77,7 +80,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1594545005582,
+			"time": 1594549287695,
 			"name": "http://localhost:8080/customer/foodOrder",
 			"description": "Order Food",
 			"collectionId": "d8603d15-2f04-bcd0-ea9b-b4d2d60c9b12",
@@ -86,11 +89,11 @@
 		},
 		{
 			"id": "2945c804-7f8e-bca2-c10b-b424993f78ee",
-			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDQzNDQsImV4cCI6MTU5NDU0NDk0NH0.EsybdW2srKPcsSs-fyFdsU6JzN5W5hTvb7zXNt2HAhJ6GovKZGHd4HtzBAvMPFpHB_Cn67EXB-TTG51oaFzvXg\n",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDkxMzcsImV4cCI6MTU5NDU0OTczN30.kf_TTRgiZDF1fmgYjCQuQ2zcFA34YAFoUen6w7-ttHzVvHcMS9nH_iXbvzrULdj8OOOro8rMmnOniwM3Jf3-vw\n",
 			"headerData": [
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDQzNDQsImV4cCI6MTU5NDU0NDk0NH0.EsybdW2srKPcsSs-fyFdsU6JzN5W5hTvb7zXNt2HAhJ6GovKZGHd4HtzBAvMPFpHB_Cn67EXB-TTG51oaFzvXg",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDkxMzcsImV4cCI6MTU5NDU0OTczN30.kf_TTRgiZDF1fmgYjCQuQ2zcFA34YAFoUen6w7-ttHzVvHcMS9nH_iXbvzrULdj8OOOro8rMmnOniwM3Jf3-vw",
 					"description": "",
 					"enabled": true
 				}
@@ -106,7 +109,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1594545016484,
+			"time": 1594549306002,
 			"name": "http://localhost:8080/restaurants/getOrders/res1",
 			"description": "Get All Order",
 			"collectionId": "d8603d15-2f04-bcd0-ea9b-b4d2d60c9b12",
@@ -114,7 +117,7 @@
 		},
 		{
 			"id": "4a4d85c3-8028-5d97-6dba-6e74a70b6eee",
-			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoic3VkaGFrYXI4MTAiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNTk0NTQ0NzExLCJleHAiOjE1OTQ1NDUzMTF9.JeQyDDiZBVOFjeGJWe7dYbWM-jOXov43Cx61K7koUZN7Tlw4KYrbNBtGD3gUEz2GeC2kRbHfHd5FEXQxD70tYw\n",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDUxNzIsImV4cCI6MTU5NDU0NTc3Mn0.Myv5Ma6u9amAOHOjT_TK-u-mTO0kMYkR1XFgc9yS7jDIDp73AdB6ispbWXds-rceQ0YSs0-WXZ8eAjH-Z7jN2w\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -124,7 +127,7 @@
 				},
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoic3VkaGFrYXI4MTAiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNTk0NTQ0NzExLCJleHAiOjE1OTQ1NDUzMTF9.JeQyDDiZBVOFjeGJWe7dYbWM-jOXov43Cx61K7koUZN7Tlw4KYrbNBtGD3gUEz2GeC2kRbHfHd5FEXQxD70tYw",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDUxNzIsImV4cCI6MTU5NDU0NTc3Mn0.Myv5Ma6u9amAOHOjT_TK-u-mTO0kMYkR1XFgc9yS7jDIDp73AdB6ispbWXds-rceQ0YSs0-WXZ8eAjH-Z7jN2w",
 					"description": "",
 					"enabled": true
 				}
@@ -141,7 +144,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1594545007735,
+			"time": 1594549289825,
 			"name": "http://localhost:8080/customer/getMenuItem/res1",
 			"description": "Get List of items from restaurant",
 			"collectionId": "d8603d15-2f04-bcd0-ea9b-b4d2d60c9b12",
@@ -150,11 +153,11 @@
 		},
 		{
 			"id": "4aa0f0bc-3071-a37f-e77c-deed2a16005f",
-			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoiQW51cmFnMTIzIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTU5NDU0NDgxNSwiZXhwIjoxNTk0NTQ1NDE1fQ.eqAaD4jKQqQHGsm-uMS_8n8fIof8DlL6X7dCLIIsY-cJsuz87YWqI-9VanNQa1QpFTFsyqtnHRnarQfnq_k8yw\n",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDUxNzIsImV4cCI6MTU5NDU0NTc3Mn0.Myv5Ma6u9amAOHOjT_TK-u-mTO0kMYkR1XFgc9yS7jDIDp73AdB6ispbWXds-rceQ0YSs0-WXZ8eAjH-Z7jN2w\n",
 			"headerData": [
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoiQW51cmFnMTIzIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTU5NDU0NDgxNSwiZXhwIjoxNTk0NTQ1NDE1fQ.eqAaD4jKQqQHGsm-uMS_8n8fIof8DlL6X7dCLIIsY-cJsuz87YWqI-9VanNQa1QpFTFsyqtnHRnarQfnq_k8yw",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDUxNzIsImV4cCI6MTU5NDU0NTc3Mn0.Myv5Ma6u9amAOHOjT_TK-u-mTO0kMYkR1XFgc9yS7jDIDp73AdB6ispbWXds-rceQ0YSs0-WXZ8eAjH-Z7jN2w",
 					"description": "",
 					"enabled": true
 				}
@@ -170,7 +173,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1594544999696,
+			"time": 1594549283599,
 			"name": "http://localhost:8080/driver/updateOrderInfo/654117262/true",
 			"description": "udpate order staus pickedup true",
 			"collectionId": "d8603d15-2f04-bcd0-ea9b-b4d2d60c9b12",
@@ -199,7 +202,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1594545011954,
+			"time": 1594549301115,
 			"name": "http://localhost:8080/customer/login",
 			"description": "Customer Login",
 			"collectionId": "d8603d15-2f04-bcd0-ea9b-b4d2d60c9b12",
@@ -208,11 +211,11 @@
 		},
 		{
 			"id": "580e7353-2fb3-c375-9b75-782cabec1ed2",
-			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoiQW51cmFnMTIzIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTU5NDU0NDgxNSwiZXhwIjoxNTk0NTQ1NDE1fQ.eqAaD4jKQqQHGsm-uMS_8n8fIof8DlL6X7dCLIIsY-cJsuz87YWqI-9VanNQa1QpFTFsyqtnHRnarQfnq_k8yw\n",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDUxNzIsImV4cCI6MTU5NDU0NTc3Mn0.Myv5Ma6u9amAOHOjT_TK-u-mTO0kMYkR1XFgc9yS7jDIDp73AdB6ispbWXds-rceQ0YSs0-WXZ8eAjH-Z7jN2w\n",
 			"headerData": [
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoiQW51cmFnMTIzIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTU5NDU0NDgxNSwiZXhwIjoxNTk0NTQ1NDE1fQ.eqAaD4jKQqQHGsm-uMS_8n8fIof8DlL6X7dCLIIsY-cJsuz87YWqI-9VanNQa1QpFTFsyqtnHRnarQfnq_k8yw",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDUxNzIsImV4cCI6MTU5NDU0NTc3Mn0.Myv5Ma6u9amAOHOjT_TK-u-mTO0kMYkR1XFgc9yS7jDIDp73AdB6ispbWXds-rceQ0YSs0-WXZ8eAjH-Z7jN2w",
 					"description": "",
 					"enabled": true
 				}
@@ -228,7 +231,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1594544997861,
+			"time": 1594549285841,
 			"name": "http://localhost:8080/driver/updateDeliveryStatus/1273700145/true",
 			"description": "update delivey status",
 			"collectionId": "d8603d15-2f04-bcd0-ea9b-b4d2d60c9b12",
@@ -236,7 +239,7 @@
 		},
 		{
 			"id": "73672e9f-d5d7-55e3-4a92-5f7b14b0ebff",
-			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoic3VkaGFrYXI4MTAiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNTk0NTQ0NzExLCJleHAiOjE1OTQ1NDUzMTF9.JeQyDDiZBVOFjeGJWe7dYbWM-jOXov43Cx61K7koUZN7Tlw4KYrbNBtGD3gUEz2GeC2kRbHfHd5FEXQxD70tYw\n",
+			"headers": "Content-Type: application/json\nAuthorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDUxNzIsImV4cCI6MTU5NDU0NTc3Mn0.Myv5Ma6u9amAOHOjT_TK-u-mTO0kMYkR1XFgc9yS7jDIDp73AdB6ispbWXds-rceQ0YSs0-WXZ8eAjH-Z7jN2w\n",
 			"headerData": [
 				{
 					"key": "Content-Type",
@@ -246,7 +249,7 @@
 				},
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoic3VkaGFrYXI4MTAiLCJhdXRob3JpdGllcyI6WyJST0xFX1VTRVIiXSwiaWF0IjoxNTk0NTQ0NzExLCJleHAiOjE1OTQ1NDUzMTF9.JeQyDDiZBVOFjeGJWe7dYbWM-jOXov43Cx61K7koUZN7Tlw4KYrbNBtGD3gUEz2GeC2kRbHfHd5FEXQxD70tYw",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDUxNzIsImV4cCI6MTU5NDU0NTc3Mn0.Myv5Ma6u9amAOHOjT_TK-u-mTO0kMYkR1XFgc9yS7jDIDp73AdB6ispbWXds-rceQ0YSs0-WXZ8eAjH-Z7jN2w",
 					"description": "",
 					"enabled": true
 				}
@@ -263,7 +266,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1594545009880,
+			"time": 1594549292047,
 			"name": "http://localhost:8080/restaurants/findRestaurant",
 			"description": "Get List of Restaurant",
 			"collectionId": "d8603d15-2f04-bcd0-ea9b-b4d2d60c9b12",
@@ -292,7 +295,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1594545003568,
+			"time": 1594545236815,
 			"name": "http://localhost:8080/driver/login",
 			"description": "Validate Drive Login",
 			"collectionId": "d8603d15-2f04-bcd0-ea9b-b4d2d60c9b12",
@@ -300,12 +303,33 @@
 			"rawModeData": "{\n\t\"id\":\"Anurag123\",\n\t\"password\":\"UxRt123\"\n\t\n}"
 		},
 		{
+			"id": "86565f7b-26cc-ab6e-d12d-f585c1778e5d",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/driver/logout",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1594549279926,
+			"name": "http://localhost:8080/driver/logout",
+			"description": "Driver Logout",
+			"collectionId": "d8603d15-2f04-bcd0-ea9b-b4d2d60c9b12",
+			"responses": []
+		},
+		{
 			"id": "a9328328-d1da-d5c6-1a61-9adfbbe03172",
-			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoiQW51cmFnMTIzIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTU5NDU0NDgxNSwiZXhwIjoxNTk0NTQ1NDE1fQ.eqAaD4jKQqQHGsm-uMS_8n8fIof8DlL6X7dCLIIsY-cJsuz87YWqI-9VanNQa1QpFTFsyqtnHRnarQfnq_k8yw\n",
+			"headers": "Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDUxNzIsImV4cCI6MTU5NDU0NTc3Mn0.Myv5Ma6u9amAOHOjT_TK-u-mTO0kMYkR1XFgc9yS7jDIDp73AdB6ispbWXds-rceQ0YSs0-WXZ8eAjH-Z7jN2w\n",
 			"headerData": [
 				{
 					"key": "Authorization",
-					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoiQW51cmFnMTIzIiwiYXV0aG9yaXRpZXMiOlsiUk9MRV9VU0VSIl0sImlhdCI6MTU5NDU0NDgxNSwiZXhwIjoxNTk0NTQ1NDE1fQ.eqAaD4jKQqQHGsm-uMS_8n8fIof8DlL6X7dCLIIsY-cJsuz87YWqI-9VanNQa1QpFTFsyqtnHRnarQfnq_k8yw",
+					"value": "Bearer eyJhbGciOiJIUzUxMiJ9.eyJqdGkiOiJzb2Z0dGVrSldUIiwic3ViIjoicmVzMSIsImF1dGhvcml0aWVzIjpbIlJPTEVfVVNFUiJdLCJpYXQiOjE1OTQ1NDUxNzIsImV4cCI6MTU5NDU0NTc3Mn0.Myv5Ma6u9amAOHOjT_TK-u-mTO0kMYkR1XFgc9yS7jDIDp73AdB6ispbWXds-rceQ0YSs0-WXZ8eAjH-Z7jN2w",
 					"description": "",
 					"enabled": true
 				}
@@ -321,7 +345,7 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1594545001408,
+			"time": 1594549281697,
 			"name": "http://localhost:8080/driver/getOrderInfo/res1",
 			"description": "get order info",
 			"collectionId": "d8603d15-2f04-bcd0-ea9b-b4d2d60c9b12",
@@ -349,12 +373,54 @@
 			"tests": null,
 			"currentHelper": "normal",
 			"helperAttributes": {},
-			"time": 1594545018708,
+			"time": 1594549310129,
 			"name": "http://localhost:8080/restaurants/login",
 			"description": "Restaurant Login",
 			"collectionId": "d8603d15-2f04-bcd0-ea9b-b4d2d60c9b12",
 			"responses": [],
 			"rawModeData": "{\n\t\"id\":\"res1\",\n\t\"password\":\"res1\"\n\t\n}"
+		},
+		{
+			"id": "c658d945-17a0-9b01-191e-c60946803b37",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/customer/logout",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1594549294409,
+			"name": "http://localhost:8080/customer/logout",
+			"description": "Customer Logout",
+			"collectionId": "d8603d15-2f04-bcd0-ea9b-b4d2d60c9b12",
+			"responses": []
+		},
+		{
+			"id": "f77a973f-fc0f-b399-74d6-da11afc7cedf",
+			"headers": "",
+			"headerData": [],
+			"url": "http://localhost:8080/restaurants/logout",
+			"queryParams": [],
+			"preRequestScript": null,
+			"pathVariables": {},
+			"pathVariableData": [],
+			"method": "GET",
+			"data": null,
+			"dataMode": "params",
+			"tests": null,
+			"currentHelper": "normal",
+			"helperAttributes": {},
+			"time": 1594549308139,
+			"name": "http://localhost:8080/restaurants/logout",
+			"description": "Logout",
+			"collectionId": "d8603d15-2f04-bcd0-ea9b-b4d2d60c9b12",
+			"responses": []
 		}
 	]
 }

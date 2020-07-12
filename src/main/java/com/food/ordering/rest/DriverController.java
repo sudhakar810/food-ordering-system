@@ -9,22 +9,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import com.food.ordering.system.bean.DeliveryInfo;
 import com.food.ordering.system.bean.DeliveryInfo.OrderInfo;
-import com.food.ordering.system.bean.Invoice;
-import com.food.ordering.system.bean.MenuItem;
-import com.food.ordering.system.bean.Order;
-import com.food.ordering.system.bean.Restaurant;
 import com.food.ordering.system.bean.Validate;
-import com.food.ordering.system.service.CustomerService;
 import com.food.ordering.system.service.DriverService;
-import com.food.ordering.system.service.Menu;
-import com.food.ordering.system.service.MenuService;
-import com.food.ordering.system.service.RestaurantService;
 import com.food.ordering.util.FoodOrderingUtil;
-
-import java.util.LinkedList;
-import java.util.List;
 
 @Slf4j
 @RestController
@@ -44,6 +32,17 @@ public class DriverController {
     	validate.setPassword(null);
         log.info("logged in restaurant: " + validate.toString());
         return  new ResponseEntity<>(validate,HttpStatus.OK);
+    }
+    
+    @RequestMapping("/logout")
+    public ResponseEntity<String> logout() {
+    	String result = null;
+    	String invalidateToken = FoodOrderingUtil.invalidateToken();
+    	if(invalidateToken.isEmpty()) {
+    		result = "successfully logout";
+    	}
+    	log.info("Fetch all: " + invalidateToken);
+        return  new ResponseEntity<>(result,HttpStatus.OK);
     }
     
     @RequestMapping("/getOrderInfo/{resId}")

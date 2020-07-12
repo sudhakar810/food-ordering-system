@@ -8,14 +8,20 @@ import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.security.core.GrantedAuthority;
 import org.springframework.security.core.authority.AuthorityUtils;
 
+import io.jsonwebtoken.Claims;
 import io.jsonwebtoken.Jwts;
 import io.jsonwebtoken.SignatureAlgorithm;
 
 public class FoodOrderingUtil {
 
+	private final String HEADER = "Authorization";
+	private final String PREFIX = "Bearer ";
+	private final static String SECRET = "mySecretKey";
 	
 	public static <T> Predicate<T> distinctByKey(
 		    Function<? super T, ?> keyExtractor) {
@@ -43,5 +49,14 @@ public class FoodOrderingUtil {
 						secretKey.getBytes()).compact();
 
 		return "Bearer " + token;
+	}
+	
+	
+	public static String invalidateToken() {
+		String token = Jwts
+				.builder()
+				.setId("softtekJWT")
+				.claim("authorities",null).compact();
+		return token.isEmpty()?token:"";
 	}
 }

@@ -21,9 +21,13 @@ import com.food.ordering.system.service.RestaurantService;
 import com.food.ordering.util.FoodOrderingUtil;
 import com.food.ordering.util.GeneratePdfReport;
 
+import io.jsonwebtoken.Claims;
+
 import java.io.ByteArrayInputStream;
 import java.util.LinkedList;
 import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
 
 @Slf4j
 @RestController
@@ -47,6 +51,17 @@ public class RestaurantController {
         return  new ResponseEntity<>(validate,HttpStatus.OK);
     }
     
+    
+    @RequestMapping("/logout")
+    public ResponseEntity<String> logout() {
+    	String result = null;
+    	String invalidateToken = FoodOrderingUtil.invalidateToken();
+    	if(invalidateToken.isEmpty()) {
+    		result = "successfully logout";
+    	}
+    	log.info("Fetch all: " + invalidateToken);
+        return  new ResponseEntity<>(result,HttpStatus.OK);
+    }
     
     @RequestMapping("/getOrders/{resId}")
     public ResponseEntity<List<OrderInfo>> getItems(@PathVariable("resId") String resId) {
