@@ -7,22 +7,23 @@ This project is done using Spring Boot web application
 ## Run the Application
 ## Prerequistes
 1. Install Eclipse/STS
-2. Start PostGreSqp
-3. Use foodordering backup file available in resource folder,import in postGres and run the database
+2. Start PostGreSql
+3. Use foodordering backup file available in resource folder
+4. import in postGreSql and run the database
 
-### PsotGres DataBase Connection
+### PsotGreSql DataBase Connection
 In the folder src/main/resources/application.properties, config your database url, username and password correctly.
 ### Start the Application
 1. Import project as maven project
 2. When the dependencies specified in the file pom.xml are automatically downloaded , run the application.
-3. right click on FoodOrderingApp.java clas and run as Java Application 
+3. Right click on FoodOrderingApp.java class and run as Java Application 
 3. use Postman collection Json end-points available in  in src/main/resources/Food-Ordering-System.postman_collection.json
-4. import Food-Ordering-System.postman_collection.json file in Postman 
-5. test all available APIs end-points
+4. Import Food-Ordering-System.postman_collection.json file in Postman 
+5. Test all the available APIs end-points
 
 ## EndPoints
 ####Restaurant Service APIs
-####first Login and generate the jwtToken and pass it to each api call
+####first Login and generate the jwtToken and pass it to each API call
 1. POST- http://localhost:8080/restaurants/login 
 2. GET - http://localhost:8080/restaurants/logout
 3. GET - http://localhost:8080/restaurants/getOrders/{restaurantId}<br />
